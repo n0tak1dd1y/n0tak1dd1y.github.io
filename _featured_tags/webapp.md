@@ -10,4 +10,5 @@ description: >
 
 The Web Application Pentesting has the following vulnerabilities which are explained in detail. The aim of this section is to help readers to understand each vulnerability with its logic on how it works.
 
-* [Cros-site Scripting (xss)](https://n0tak1dd1y.github.io/2018/06/22/Cross-site-Scripting/)
+* [Cros-site Scripting (xss)](https://n0tak1dd1y.github.io/2018/06/25/Cross-site-Scripting/)
+* [SQL Injection](https://n0tak1dd1y.github.io/2018/06/27/SQL-Injection/)
