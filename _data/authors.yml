@@ -15,7 +15,7 @@ author1:
     path:            https://i0.wp.com/blog.securitybreached.org/wp-content/uploads/2017/11/Recon_wp11.png?resize=825%2C400&ssl=1
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            https://i0.wp.com/blog.securitybreached.org/wp-content/uploads/2017/11/Recon_wp11.png?resize=825%2C400&ssl=1
+      #1x:            https://i0.wp.com/blog.securitybreached.org/wp-content/uploads/2017/11/Recon_wp11.png?resize=825%2C400&ssl=1
       2x:            https://i0.wp.com/blog.securitybreached.org/wp-content/uploads/2017/11/Recon_wp11.png?resize=825%2C400&ssl=1
 
   # Social media icons in sidebar
