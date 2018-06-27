@@ -22,6 +22,10 @@
       <div class="sidebar-about">
         <h2 class="h1"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h2>
         {% assign text = site.tagline | default:site.description %}
+</br>
+</br>
+</br>
+</br>
         {% if text %}
           <p class="{% if text.size > 100 %}fine{% endif %}">
             {{ text | markdownify | replace:'<p>','' | replace:'</p>','' }}
