@@ -16,7 +16,7 @@ In order to have command on XSS, he/she should have knowledge on the following:
 JavasScript
 : a Client-side scripting language used to design and implement business logic functionalities in the application. It allows to interact with application server for sending and receiving the data. F  Below functionalities can be used to perform this attack:  
 
-"<script>alert(1)</script>" - it prompts the alert box  
+"<script>alert(x)</script>" - it prompts the alert box  
 "<script>document.write(“XSS”);</script>" - Displays the output to the user  
 Document.cookie  - Gives the cookie value of the logged in user  
 Document.domain – Gives domain name of the application  
