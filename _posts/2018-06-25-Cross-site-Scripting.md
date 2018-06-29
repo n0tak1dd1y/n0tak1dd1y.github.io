@@ -10,17 +10,6 @@ tags: [webapp]
 
 Cross-site Scripting (XSS) is an attack is performed with a crafted malicious Javascript inserted into the application user input which is then stored on the database of the application. Whenever any user visits that particular, the crafted Javascript gets executed and the user session information will be transferred to the attacker server.  
 
-### Basics of XSS
-In order to have command on XSS, he/she should have knowledge on the following:  
-
-JavasScript
-: a Client-side scripting language used to design and implement business logic functionalities in the application. It allows to interact with application server for sending and receiving the data. F  Below functionalities can be used to perform this attack:  
-
-"<script>alert(x)</script>" - it prompts the alert box  
-"<script>document.write(“XSS”);</script>" - Displays the output to the user  
-Document.cookie  - Gives the cookie value of the logged in user  
-Document.domain – Gives domain name of the application  
-
 ### What are the attacks can be performed?
 - Allows an attacker to: 
  - Steal Session Cookies (Can hijack victim session)
