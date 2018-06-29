@@ -14,7 +14,9 @@ Cross-site Scripting (XSS) is an attack is performed with a crafted malicious Ja
 In order to have command on XSS, he/she should have knowledge on the following:  
 
 JavasScript
-a Client-side scripting language used to design and implement business logic functionalities in the application. It allows to interact with application server for sending and receiving the data. F  Below functionalities can be used to perform this attack:  
+: a Client-side scripting language used to design and implement business logic functionalities in the application. It allows to interact with application server for sending and receiving the data. F  Below functionalities can be used to perform this attack:  
+
+
 ### What are the attacks can be performed?
 - Allows an attacker to: 
  - Steal Session Cookies (Can hijack victim session)
