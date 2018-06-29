@@ -15,24 +15,6 @@ In order to have command on XSS, he/she should have knowledge on the following:
 
 JavasScript
 a Client-side scripting language used to design and implement business logic functionalities in the application. It allows to interact with application server for sending and receiving the data. F  Below functionalities can be used to perform this attack:  
-
-<script>alert(1)</script> - it prompts the alert box
-<script>document.write(“XSS”);</script> - Displays the output to the user
-Document.cookie  - Gives the cookie value of the logged in user
-Document.domain – Gives domain name of the application  
-
-DOM
-   Document Object Model is a platform that allows programs and scripts to dynamically update content, structure and style of the document. When the document is loaded on the browser, the DOM converts the code into a tree-like structure and executes the code based on the tree. Often misconfigured applications store the user input in the DOM tree which makes user system vulnerable to client side attacks.  
-
-HTML
-  Hyper Text Markup Language(HTML) is used to design the structure or layout of a webpage. It is used to create login page, registration page etc. It is often used to deface web sites.  
-
-EventHandlers
-   An event handler is a JavaScript function which is responsible to execute specified function after a particular event. Few of these are:
-onClick()
-onMouseOver()
-onload() etc. 
-
 ### What are the attacks can be performed?
 - Allows an attacker to: 
  - Steal Session Cookies (Can hijack victim session)
