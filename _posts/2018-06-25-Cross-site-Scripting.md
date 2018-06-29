@@ -8,15 +8,34 @@ tags: [webapp]
 
   **Cross-site Scripting (XSS)** is a vulnerability which allows an attacker to execute malicious JavaScripts or html code via input fields on the victim machine to steal session cookies which can be used to hijack the victim account  
 
-
-## Attacks
+Cross-site Scripting (XSS) is an attack is performed with a crafted malicious Javascript inserted into the application user input which is then stored on the database of the application. Whenever any user visits that particular, the crafted Javascript gets executed and the user session information will be transferred to the attacker server.
+#### Practical Scenario
+Consider a vulnerable banking application, the attacker crafts a HTML Page with login feature keeping the application background as the same. Further he injects the crafted HTML page into the application and it gets stored on the database. Whoever a user visits the page, it prompts for login. If the user enter credentials, it wil be sent to the attacker in background but the user does not aware of the same. As a result, the user’s account is compromised and all the money is stolen.
+### Basics of XSS
+In order to have command on XSS, he/she should have knowledge on the following:  
+JavasScript
+: a Client-side scripting language used to design and implement business logic functionalities in the application. It allows to interact with application server for sending and receiving the data. F  Below functionalities can be used to perform this attack:
+<script>alert(1)</script> - it prompts the alert box
+<script>document.write(“XSS”);</script> - Displays the output to the user
+Document.cookie  - Gives the cookie value of the logged in user
+Document.domain – Gives domain name of the application
+DOM
+:  Document Object Model is a platform that allows programs and scripts to dynamically update content, structure and style of the document. When the document is loaded on the browser, the DOM converts the code into a tree-like structure and executes the code based on the tree. Often misconfigured applications store the user input in the DOM tree which makes user system vulnerable to client side attacks.
+HTML
+: Hyper Text Markup Language(HTML) is used to design the structure or layout of a webpage. It is used to create login page, registration page etc. It is often used to deface web sites.
+EventHandlers
+: An event handler is a JavaScript function which is responsible to execute specified function after a particular event. Few of these are:
+onClick()
+onMouseOver()
+onload() etc. 
+### What are the attacks can be performed?
 - Allows an attacker to: 
  - Steal Session Cookies (Can hijack victim session)
  - Redirect users to malicious sites
  - Perform Phishing Attack
  - Prompt users to download Malwares (embedded within the code)
  - Website Defacement  
-## Vectors
+### Prone Vectors for XSS 
 - User Input Fields
 - HTTP Headers (User-Agent, Referrer etc) 
 ## Types of Cross-site Scripting (XSS)   
@@ -35,25 +54,25 @@ Let's have look at different scenarios:
 **Scenario 1:**  
 Step1: User entered "Hello" to in search box and reflected the input as shown 
 
-![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd13/master/assets/webapp/1.PNG)
+![](https://raw.githubusercontent.com/n0tak1dd1y/master/assets/webapp/1.PNG)
 
 Step2: Press "CTRL+U" to see the source code and note the location of User input as shown  
 
-![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd13/master/assets/webapp/2.PNG)
+![](https://raw.githubusercontent.com/n0tak1dd1y/master/assets/webapp/2.PNG)
 
 Step3: Enter below payload in search box as shown
  ```js
 <svg onload="alert(1)">
 ``` 
-![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd13/master/assets/webapp/3.PNG) 
+![](https://raw.githubusercontent.com/n0tak1dd1y/master/assets/webapp/3.PNG) 
 
 Step4: Voila!!! got executed  
 
-![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd13/master/assets/webapp/4.PNG)
+![](https://raw.githubusercontent.com/n0tak1dd1y/master/assets/webapp/4.PNG)
 
 Step5: Now Press "CTRL+U" to see the how the script is reflected in the source code  
 
-![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd13/master/assets/webapp/5.PNG)
+![](https://raw.githubusercontent.com/n0tak1dd1y/master/assets/webapp/5.PNG)
 
 Step6: Note the script is placed between "<p></p>". It shows that we can pass all the tags which has the syntax as "<></>" or "<>"  
 For Example: 
