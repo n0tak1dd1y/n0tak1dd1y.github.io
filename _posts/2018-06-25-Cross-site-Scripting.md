@@ -36,25 +36,25 @@ Let's have look at different scenarios:
 **Scenario 1:**  
 Step1: User entered "Hello" to in search box and reflected the input as shown 
 
-![](https://raw.githubusercontent.com/n0tak1dd1y/master/assets/webapp/1.PNG)
+![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd1y.github.io/master/assets/webapp/1.png)
 
 Step2: Press "CTRL+U" to see the source code and note the location of User input as shown  
 
-![](https://raw.githubusercontent.com/n0tak1dd1y/master/assets/webapp/2.PNG)
+![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd1y.github.io/master/assets/webapp/2.png)
 
 Step3: Enter below payload in search box as shown
  ```js
 <svg onload="alert(1)">
 ``` 
-![](https://raw.githubusercontent.com/n0tak1dd1y/master/assets/webapp/3.PNG) 
+![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd1y.github.io/master/assets/webapp/3.png) 
 
 Step4: Voila!!! got executed  
 
-![](https://raw.githubusercontent.com/n0tak1dd1y/master/assets/webapp/4.PNG)
+![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd1y.github.io/master/assets/webapp/4.png)
 
 Step5: Now Press "CTRL+U" to see the how the script is reflected in the source code  
 
-![](https://raw.githubusercontent.com/n0tak1dd1y/master/assets/webapp/5.PNG)
+![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd1y.github.io/master/assets/webapp/5.png)
 
 Step6: Note the script is placed between "<p></p>". It shows that we can pass all the tags which has the syntax as "<></>" or "<>"  
 For Example: 
