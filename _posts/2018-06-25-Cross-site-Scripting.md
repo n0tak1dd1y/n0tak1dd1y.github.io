@@ -8,7 +8,7 @@ tags: [webapp]
 
   **Cross-site Scripting (XSS)** is a vulnerability which allows an attacker to execute malicious JavaScripts or html code via input fields on the victim machine to steal session cookies which can be used to hijack the victim account  
 
-Cross-site Scripting (XSS) is an attack is performed with a crafted malicious Javascript inserted into the application user input which is then stored on the database of the application. Whenever any user visits that particular, the crafted Javascript gets executed and the user session information will be transferred to the attacker server.  
+Cross-site Scripting (XSS) is an attack is performed with a crafted malicious Javascript inserted into the application user input which is then stored on the application. Whenever any user visits that particular, the crafted Javascript gets executed and the user session information will be transferred to the attacker server.  
 
 ### What are the attacks can be performed?
 - Allows an attacker to: 
