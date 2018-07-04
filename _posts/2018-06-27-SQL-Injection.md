@@ -37,10 +37,10 @@ Databases comes under SQL are :
 
 A __NoSQL__ is a **not-only SQL** is used to query the database. NoSQL Databases are used to store unstructred data in the database where the fields are not defined to what kind of values these are free-form manner. 
 Databases users NoSQL are:
- - Document Databases
- - key-value stores
- - Wide column stores
- - Graph Databases
+ - Document Databases stores all the data in the JSON, XML formats
+ - key-value stores uss a key-value to perform read and write processing of data like text, video, audio, text documents in high-speed
+ - Wide column stores used tables with rows and columns to store the data and can be retrieved with a group of columns
+ - Graph Databases uses graph structures to store, map and query relationships. It allows index-free adjacency to link adjacent elements
 
 ### Types of SQL Injection:
  - Error-based SQL Injection
