@@ -10,13 +10,13 @@ tags: [webapp]
 
 **SQL Injection** attack allows an attacker to inject malicious SQL Queries into database which extracts sensitive data via user input fileds of the application. On successfull exploitation, an attacker can insert/modify data in database or even compromise the server 
 
-####Data and its types
+#### Data and its types
 Data is any information which is being processed and stored on the computer for some purpose. It includes text documents, images, audios, videos etc.
 Types of data are:
  - Structured which is well organizaed and stored in a hierarchical form
  - Unstructured which is not organized and does not have any hierarchies
 
-####Database and its types
+#### Database and its types
 A **Database** is a collection of structured and unstructred data stored in a accessible location in an organized way using model approach.
 Types of Databases:
  - Relational Database stores data in a tabular form with rows and columns where columns is a category and row is a data
