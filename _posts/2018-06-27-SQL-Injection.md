@@ -70,7 +70,7 @@ Allows attackers to perform the below:
   Step 5: There are different ways to identify as follows:  
   - Syntax error from the database  
   - No Content displayed on tampering the query  
-  - If sleep function is passed server doesn’t respond for the specified time  
+  - If sleep function is passed server doesn’t respond for the specified time
   Step 6: Based on the response, the query has to be fixed.  
   Step 7: All about “Break and Fix the Syntax”. It’s not about passing the payloads on all the inputs and expect an output. It’s  a waste of time  
   Step 8: We can use tools like SQLMAP or manual to dup the database
