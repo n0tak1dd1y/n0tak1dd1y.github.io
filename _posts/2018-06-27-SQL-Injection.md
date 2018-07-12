@@ -54,30 +54,30 @@ Examples of **SQL Databases** are:
   - Redis
   - MemcacheDB
 #### What can be done with SQL Injection?
-Allows attackers to perform the below:
-  - Insert/Modify the contents of the database
-  - Dump the entire database of the application
-  - Gain access to the shell of the application server
-#### Prone Vectors
-  - Input fields which interacts with databases  
-  - Hidden fields
-  - HTTP Headers
-#### Steps to detect SQL Injection  
+Allows attackers to perform the below:  
+ - Insert/Modify the contents of the database  
+ - Dump the entire database of the application  
+ - Gain access to the shell of the application server  
+#### Prone Vectors  
+ - Input fields which interacts with databases  
+ - Hidden fields  
+ - HTTP Headers
+#### Steps to detect SQL Injection
   Step 1: Enter an integer or text on the input field  
   Step 2: Check the results of the application  
   Step 3: Analyze what all the inputs interact with database  
   Step 4: Guess the DBMS used in the application and pass the special characters like ‘, “, #, * to break the syntax of the query.  
   Step 5: There are different ways to identify as follows:  
-    - Syntax error from the database  
-    - No Content displayed on tampering the query  
-    - If sleep function is passed server doesn’t respond for the specified time  
+  - Syntax error from the database  
+  - No Content displayed on tampering the query  
+  - If sleep function is passed server doesn’t respond for the specified time  
   Step 6: Based on the response, the query has to be fixed.  
   Step 7: All about “Break and Fix the Syntax”. It’s not about passing the payloads on all the inputs and expect an output. It’s  a waste of time  
   Step 8: We can use tools like SQLMAP or manual to dup the database
 #### SQL Injection Demo
 #### Types of SQL Injection:
-  - Error-based SQL Injection  
-  - Blind SQL Injection  
-    - Boolean-based SQL Injection  
-    - Time-based SQL Injection  
-  - Second Order SQL Injection
+ - Error-based SQL Injection  
+ - Blind SQL Injection  
+   - Boolean-based SQL Injection  
+   - Time-based SQL Injection  
+ - Second Order SQL Injection
