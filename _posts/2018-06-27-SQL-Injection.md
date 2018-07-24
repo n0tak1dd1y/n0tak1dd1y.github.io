@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: SQL Injection
 description: >
@@ -76,9 +76,12 @@ Allows attackers to perform the below:
   Step 8: We can use tools like SQLMAP or manual to dup the database
 #### SQL Injection Demo
   Step1: As the string entered in the search box with a "'" at the end of the word and it thrown an "SQL" syntax error  
+  ![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd1y.github.io/master/assets/webapp/sqli/1.PNG)
   Step2: Since the syntax of the query might be as "SELECT * FROM TABLE WHERE ID = 'movie'", the "'" in thhe search box has overflowed and need to be fixed in order to execute queries in the database as shown.  
+  ![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd1y.github.io/master/assets/webapp/sqli/2.PNG)
   Step3: As shown passing a comment "hello'-- -" fixed the syntax error. The reason is we have commented out the rest of the query as "SELECT * FROM TABLE WHERE ID = 'movie'-- -".  
   Step4: Now we can use this weakness to dump the entire content in thhe movies table as shhown  
+  ![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd1y.github.io/master/assets/webapp/sqli/3.PNG)
   Step5: As seen above, the keyword "hello' OR '1'='1'-- -" has dumped the entire content using an "Logical OR" logic. The query has become "SELECT * FROM TABLE WHERE ID = 'hello' OR '1'='1' -- -'". The first part of the query is "hello'" is false and the sencod part of the query is true as "1=1" is true. Hence the database has shown the entire content.
 #### Types of SQL Injection:
  - Error-based SQL Injection  
