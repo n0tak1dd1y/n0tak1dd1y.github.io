@@ -1,13 +1,20 @@
-##Error-based SQL Injection
+---
+layout: post
+title: SQL Injection
+description: >
 
-A type of **SQL Injection** attack which is performed based on the errors thrown by the database on the application. An attacker performs "Error-based SQL Injection" by tampering the user input with special characters like ',",\,) etc.On passing these special characters, the input will be placed in the backed SQL Query as it is. Hence, it breaks the syntax of thhe query and the database throws an error with details such as where the syntax broken and the rest of the query etc. These details can be used to extract the contents of the entire database based on the errors by fixing with the correct syntax. An attacker can even include the shells in the database whhich allows to compromise the web server.
+tags: [SQL Injection]
+---
 
+## Error-based SQL Injection
+
+A type of **SQL Injection** attack which is performed based on the errors thrown by the database on the application. An attacker performs "Error-based SQL Injection" by tampering the user input with special characters like ',",\,) etc.On passing these special characters, the input will be placed in the backed SQL Query as it is. Hence, it breaks the syntax of thhe query and the database throws an error with details such as where the syntax broken and the rest of the query etc. These details can be used to extract the contents of the entire database based on the errors by fixing with the correct syntax. An attacker can even include the shells in the database whhich allows to compromise the web server.  
 #### SQL Queries to understand
 
 To comment out a query need to use "--+"  
 To identify number of columns use "order by 3"  
 To combine all the columns and display the content use "union select 1,2,3 --+"  
-To dump all the content in a table or column use group_concat() function
+To dump all the content in a table or column use group_concat() function  
 #### Steps to identify and exploit
   Step 1: To identify a vulnerability, need to append some special characters as shown  
   ![](https://raw.githubusercontent.com/n0tak1dd1y/n0tak1dd1y.github.io/master/assets/webapp/error/1.PNG)
