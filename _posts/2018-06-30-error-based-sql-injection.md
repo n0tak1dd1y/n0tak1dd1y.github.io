@@ -8,6 +8,7 @@ tags: [SQL Injection]
 
 ## Error-based SQL Injection
 
+
 A type of **SQL Injection** attack which is performed based on the errors thrown by the database on the application. An attacker performs "Error-based SQL Injection" by tampering the user input with special characters like ',",\,) etc.On passing these special characters, the input will be placed in the backed SQL Query as it is. Hence, it breaks the syntax of thhe query and the database throws an error with details such as where the syntax broken and the rest of the query etc. These details can be used to extract the contents of the entire database based on the errors by fixing with the correct syntax. An attacker can even include the shells in the database whhich allows to compromise the web server.  
 #### SQL Queries to understand
 
