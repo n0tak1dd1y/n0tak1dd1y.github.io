@@ -7,6 +7,8 @@ tags: [SQL Injection]
 ---
 
 ## Second Order SQL Injection  
+
+
 A type of **SQL Injection** attack which can be performed to manipulate/update contents in the database as injecting the payload in the first query and exploiting in the second query. An attacker perform "Second Order SQL Injection" by tampering the user input in a page and injects the payload as a normal input which is then stored in the database. Now, he will perform actions in the second page which is related to the input in the first page that gets executed. It is a very rare and difficult one to find out.
 
 #### Steps to identify and exploit
