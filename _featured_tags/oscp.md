@@ -139,6 +139,13 @@ To start the penetration testing, it has many many things to know few are listed
 #### Metasploit Framework
   - [Metasploit Tutorial](https://www.offensive-security.com/metasploit-unleashed/) Guess no intro required for this guy
 
+#### Buffer Overflow
+  - Buffer Overflow holds 25 marks in the OSCP exam and it is considered as a difficult topic to understand. If you go through the below link you will  learn how to perform step by step in a clear way. Hope you grab it
+  - [Buffer Overflow 1](https://www.youtube.com/watch?v=pB7d3ZAXkOo)
+  - [Buffer Overflow 2](https://www.youtube.com/watch?v=QP6O2nYaOQo)
+  - [Buffer Overflow 3](https://www.youtube.com/watch?v=6TsEB7qKJzA)
+  - [Buffer Overflow 4](https://www.youtube.com/watch?v=JdVRqMQLPCU&t=28s)
+
 #### Brute FOrce
   - Password Cracking is required sometimes in the lab where you might need to crack the hashes or login passwords need the below tools
   - [md5 crack](https://www.md5online.org/) Want to crack md5 or sha1 just use this one gives you result in secs
