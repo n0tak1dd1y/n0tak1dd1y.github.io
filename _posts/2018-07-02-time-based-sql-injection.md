@@ -6,8 +6,7 @@ description: >
 tags: [SQL Injection]
 ---
 
-## Error-based SQL Injection  
-
+## Boolean-based SQL Injection  
 
 A type of **SQL Injection** attack which is performed based on the "Yes/NO" response from the application in the form of blank page or no content displayed. An attacker can perform "boolean-based SQL Injection" by tampering the user input with special characters such "',",*,\" etc which is then placed in the backed SQL query of the application. On parsing this query with database, it does not show any content due to A SYNTAX error. If the user input does not break the syntax, the application displays the regular page. If the user input breaks the syntax, then the application displays blank page or a page with modified contents. It proves that the application is vulnerable to "Boolean-based SQL Injection".
 #### Steps to identify and exploit

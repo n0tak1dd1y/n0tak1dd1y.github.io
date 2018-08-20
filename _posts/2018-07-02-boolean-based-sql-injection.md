@@ -6,7 +6,7 @@ description: >
 tags: [SQL Injection]
 ---
 
-## Time-based SQL Injection  
+## Boolean-based SQL Injection  
 
 
 A type of **SQL Injection** attack which is performed based on the response timing from the application. An attacker can perform "time-based SQL Injection" by tampering the user input with special characters such "',",*,\" etc which is then placed in the backend SQL query of the application. On parsing this query with database, it does not respond for a specified period of time. It can be exploited by using functions like sleep(), wait for delay etc and ask questions to the database for its name, version etc.
