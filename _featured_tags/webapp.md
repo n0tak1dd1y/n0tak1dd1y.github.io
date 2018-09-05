@@ -12,3 +12,4 @@ The Web Application Pentesting has the following vulnerabilities which are expla
 
 * [Cros-site Scripting (xss)](https://n0tak1dd1y.github.io/2018/06/25/Cross-site-Scripting/)
 * [SQL Injection](https://n0tak1dd1y.github.io/2018/06/27/SQL-Injection/)
+* [Cross-site Request Forgery](https://n0tak1dd1y.github.io/2018/08/10/csrf/)
